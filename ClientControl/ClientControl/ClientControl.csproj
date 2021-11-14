@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C544D777-7624-4A97-8912-6F77366A6F4A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ClientControl</RootNamespace>
+    <AssemblyName>ClientControl</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.ReportViewer.Common.10.0.40219.1\lib\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.ReportViewer.Common.10.0.40219.1\lib\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.ReportViewer.Common.10.0.40219.1\lib\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.ReportViewer.WebForms.10.0.40219.1\lib\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.1016.290\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\calendar.png" />
+    <Content Include="images\clear.png" />
+    <Content Include="images\close.png" />
+    <Content Include="images\credencial1.jpeg" />
+    <Content Include="images\credencial2.jpeg" />
+    <Content Include="images\credencial3.jpeg" />
+    <Content Include="images\currency.png" />
+    <Content Include="images\currency1.png" />
+    <Content Include="images\img-01.png" />
+    <Content Include="images\img-01_.png" />
+    <Content Include="images\logo.jpeg" />
+    <Content Include="images\logo.jpg" />
+    <Content Include="images\logout.png" />
+    <Content Include="images\magnifying.png" />
+    <Content Include="images\new.png" />
+    <Content Include="images\pdf.png" />
+    <Content Include="images\pic01.jpg" />
+    <Content Include="images\pic02.jpg" />
+    <Content Include="images\pic03.jpg" />
+    <Content Include="images\pic04.jpg" />
+    <Content Include="images\pic05.jpg" />
+    <Content Include="images\pic06.jpg" />
+    <Content Include="images\pic07.jpg" />
+    <Content Include="images\pic08.jpg" />
+    <Content Include="images\pic09.jpg" />
+    <Content Include="images\pic10.jpg" />
+    <Content Include="images\pic11.jpg" />
+    <Content Include="images\save.png" />
+    <Content Include="images\under_construction.gif" />
+    <Content Include="images\viewProfile.png" />
+    <Content Include="images\voucher.png" />
+    <Content Include="index.aspx" />
+    <Content Include="login.aspx" />
+    <Content Include="logout.aspx" />
+    <Content Include="Operations\clientDocument.aspx" />
+    <Content Include="Operations\clientPayment.aspx" />
+    <Content Include="Operations\documentCancel.aspx" />
+    <Content Include="Operations\list_client.aspx" />
+    <Content Include="Operations\list_lote.aspx" />
+    <Content Include="Operations\list_manzana.aspx" />
+    <Content Include="Operations\list_seller.aspx" />
+    <Content Include="Operations\list_tipo.aspx" />
+    <Content Include="Operations\list_user.aspx" />
+    <Content Include="Operations\paymentCancel.aspx" />
+    <Content Include="Operations\rpt_clients.aspx" />
+    <Content Include="Operations\rpt_contractByClient.aspx" />
+    <Content Include="Operations\rpt_documents.aspx" />
+    <Content Include="Operations\rpt_idCard.aspx" />
+    <Content Include="Operations\rpt_payments.aspx" />
+    <Content Include="Operations\setup_backup.aspx" />
+    <Content Include="Operations\setup_client.aspx" />
+    <Content Include="Operations\setup_lote.aspx" />
+    <Content Include="Operations\setup_manzana.aspx" />
+    <Content Include="Operations\setup_seller.aspx" />
+    <Content Include="Operations\setup_tipo.aspx" />
+    <Content Include="Operations\setup_user.aspx" />
+    <Content Include="Operations\under_construction.aspx" />
+    <Content Include="Operations\web_reporter.aspx" />
+    <Content Include="Operations\web_rpt.xsc">
+      <DependentUpon>web_rpt.xsd</DependentUpon>
+    </Content>
+    <None Include="Operations\web_rpt.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>web_rpt.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Operations\web_rpt.xss">
+      <DependentUpon>web_rpt.xsd</DependentUpon>
+    </Content>
+    <None Include="packages.config" />
+    <None Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="Scripts\jquery-1.7.1.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="base.Master.cs">
+      <DependentUpon>base.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="base.Master.designer.cs">
+      <DependentUpon>base.Master</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="logout.aspx.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logout.aspx.designer.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\clientDocument.aspx.cs">
+      <DependentUpon>clientDocument.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operations\clientDocument.aspx.designer.cs">
+      <DependentUpon>clientDocument.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\clientPayment.aspx.cs">
+      <DependentUpon>clientPayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operations\clientPayment.aspx.designer.cs">
+      <DependentUpon>clientPayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\documentCancel.aspx.cs">
+      <DependentUpon>documentCancel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operations\documentCancel.aspx.designer.cs">
+      <DependentUpon>documentCancel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\list_client.aspx.cs">
+      <DependentUpon>list_client.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operations\list_client.aspx.designer.cs">
+      <DependentUpon>list_client.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\list_lote.aspx.cs">
+      <DependentUpon>list_lote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operations\list_lote.aspx.designer.cs">
+      <DependentUpon>list_lote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\list_manzana.aspx.cs">
+      <DependentUpon>list_manzana.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operations\list_manzana.aspx.designer.cs">
+      <DependentUpon>list_manzana.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\list_seller.aspx.cs">
+      <DependentUpon>list_seller.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operations\list_seller.aspx.designer.cs">
+      <DependentUpon>list_seller.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\list_tipo.aspx.cs">
+      <DependentUpon>list_tipo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operations\list_tipo.aspx.designer.cs">
+      <DependentUpon>list_tipo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\list_user.aspx.cs">
+      <DependentUpon>list_user.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operations\list_user.aspx.designer.cs">
+      <DependentUpon>list_user.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\paymentCancel.aspx.cs">
+      <DependentUpon>paymentCancel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operations\paymentCancel.aspx.designer.cs">
+      <DependentUpon>paymentCancel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\rpt_clients.aspx.cs">
+      <DependentUpon>rpt_clients.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operations\rpt_clients.aspx.designer.cs">
+      <DependentUpon>rpt_clients.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\rpt_contractByClient.aspx.cs">
+      <DependentUpon>rpt_contractByClient.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operations\rpt_contractByClient.aspx.designer.cs">
+      <DependentUpon>rpt_contractByClient.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\rpt_documents.aspx.cs">
+      <DependentUpon>rpt_documents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operations\rpt_documents.aspx.designer.cs">
+      <DependentUpon>rpt_documents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\rpt_idCard.aspx.cs">
+      <DependentUpon>rpt_idCard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operations\rpt_idCard.aspx.designer.cs">
+      <DependentUpon>rpt_idCard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\rpt_payments.aspx.cs">
+      <DependentUpon>rpt_payments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operations\rpt_payments.aspx.designer.cs">
+      <DependentUpon>rpt_payments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\setup_backup.aspx.cs">
+      <DependentUpon>setup_backup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operations\setup_backup.aspx.designer.cs">
+      <DependentUpon>setup_backup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\setup_client.aspx.cs">
+      <DependentUpon>setup_client.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operations\setup_client.aspx.designer.cs">
+      <DependentUpon>setup_client.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\setup_lote.aspx.cs">
+      <DependentUpon>setup_lote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operations\setup_lote.aspx.designer.cs">
+      <DependentUpon>setup_lote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\setup_manzana.aspx.cs">
+      <DependentUpon>setup_manzana.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operations\setup_manzana.aspx.designer.cs">
+      <DependentUpon>setup_manzana.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\setup_seller.aspx.cs">
+      <DependentUpon>setup_seller.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operations\setup_seller.aspx.designer.cs">
+      <DependentUpon>setup_seller.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\setup_tipo.aspx.cs">
+      <DependentUpon>setup_tipo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operations\setup_tipo.aspx.designer.cs">
+      <DependentUpon>setup_tipo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\setup_user.aspx.cs">
+      <DependentUpon>setup_user.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operations\setup_user.aspx.designer.cs">
+      <DependentUpon>setup_user.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\under_construction.aspx.cs">
+      <DependentUpon>under_construction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operations\under_construction.aspx.designer.cs">
+      <DependentUpon>under_construction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\web_reporter.aspx.cs">
+      <DependentUpon>web_reporter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Operations\web_reporter.aspx.designer.cs">
+      <DependentUpon>web_reporter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\web_rpt.cs">
+      <DependentUpon>web_rpt.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Operations\web_rpt.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>web_rpt.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Operations\rpt_clientDocument.rdlc" />
+    <EmbeddedResource Include="Operations\rpt_contractByClientHORA.rdlc" />
+    <EmbeddedResource Include="Operations\rpt_contractByClientMOGA.rdlc" />
+    <EmbeddedResource Include="Operations\rpt_credencial.rdlc" />
+    <EmbeddedResource Include="Operations\rpt_payments.rdlc" />
+    <EmbeddedResource Include="Operations\rpt_documents.rdlc" />
+    <EmbeddedResource Include="Operations\rpt_clients.rdlc" />
+    <EmbeddedResource Include="Operations\rpt_idCard.rdlc" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="base.Master" />
+    <Content Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </Content>
+    <None Include="Properties\PublishProfiles\campestreV1.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>61189</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:57857/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

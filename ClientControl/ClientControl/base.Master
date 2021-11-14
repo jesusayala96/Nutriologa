@@ -1,0 +1,93 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="/base.master.cs" Inherits="ClientControl._base" %>
+
+<script type="text/javascript"> 
+   
+</script>
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Concordia</title>
+    <meta charset="utf-8" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/datepicker.css" />
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+                <!-- Section -->
+                <%-- TEXTO
+                                4 IMAGENES Y TEXTO
+                --%>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"> 
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div id="sidebar">
+            <div class="inner">
+                <!-- Menu -->
+                <nav id="menu">
+                    <header class="major">
+                        <h2>Men&uacute;</h2>
+                    </header>
+                    <ul style="font-size:medium">
+                        <li><a href="/index.aspx" class="icon solid fa-home" style="font-size:x-large"></a></li>
+                        <li >
+                            <span class="opener">Catálogos</span>
+                            <ul>
+                                <li><a href="/Operations/list_client.aspx">Clientes</a></li>
+                                <li><a href="/Operations/list_lote.aspx">Lotes</a></li>
+                                <li><a href="/Operations/list_manzana.aspx">Manzanas</a></li>
+                                <li><a href="/Operations/list_tipo.aspx">Precio de Lotes</a></li>
+                                <li><a href="/Operations/list_seller.aspx"  >Vendedores</a></li>
+
+                                <li><a href="/Operations/list_user.aspx"  class="icon solid fa-key">&nbsp;&nbsp;Usuarios</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <span class="opener">Movimientos</span>
+                            <ul>
+                                <li><a href="/Operations/clientPayment.aspx">Aplicar Pago</a></li>
+                                <li><a href="/Operations/paymentCancel.aspx"  class="icon solid fa-eject">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cancelar Pago</a></li>
+                                <li><a href="/Operations/clientDocument.aspx">Generar Pagarés</a></li>
+                                <li><a href="/Operations/documentCancel.aspx" class="icon solid fa-eject">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cancelar Pagarés</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="opener">Reportes</span>
+                            <ul>
+                                <li><a href="/Operations/rpt_idCard.aspx">Imprimir credencial</a></li>
+                                <li><a href="/Operations/rpt_documents.aspx">Pagarés</a></li>
+                                <li><a href="/Operations/rpt_payments.aspx">Pagos</a></li>
+                                <li><a href="/Operations/rpt_contractByClient.aspx">Reimpresion de contratos</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/logout.aspx" class="icon solid fa-sign-out-alt">&nbsp;&nbsp;Cerrar Sesi&oacute;n</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </div>
+    <!-- Scripts -->
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/browser.min.js"></script>
+    <script src="/assets/js/breakpoints.min.js"></script>
+    <script src="/assets/js/util.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/datepicker.js"></script>
+
+</body>
+</html>
